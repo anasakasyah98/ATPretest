@@ -26,6 +26,20 @@ Before running the pre-test, make sure these are available:
 https://id.atlassian.com/manage-profile/security/api-tokens
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+## Example
+
+Login page
+
+<img width="275" height="508" alt="Screenshot 2026-10-25 132640" src="https://github.com/user-attachments/assets/36d21b60-989d-44d5-b1ba-f85f987b0802" />
+
+Home page
+
+* Offline Mode
+<img width="1312" height="774" alt="Screenshot 2026-10-25 132754" src="https://github.com/user-attachments/assets/551059ba-f37a-4b9b-8539-f145e53615c5" />
+
+* Online Mode
+<img width="1313" height="775" alt="Screenshot 2026-10-25 132849" src="https://github.com/user-attachments/assets/33da0d2c-573c-4536-9541-1626c857ccf2" />
+
 ## How to use
 
 Before test
