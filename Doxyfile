@@ -1,0 +1,65 @@
+##
+# @file Doxyfile
+# @brief Doxygen configuration for EaglePretest.
+#
+# Generates the HTML documentation from the ## @brief / @param / @return
+# headers in src/*.py, with README.md as the main page.
+#
+# Usage (inside the project folder):
+#   doxygen Doxyfile
+# Output: docs/html/index.html
+#
+# @author Anas Akasyah Bin Abdul Patas
+##
+
+# Project
+PROJECT_NAME            = "EaglePretest"
+PROJECT_NUMBER          = 1.0.0
+PROJECT_BRIEF           = "Eagle Wireless AT Command Pre-Test Tool"
+OUTPUT_DIRECTORY        = docs
+CREATE_SUBDIRS          = NO
+OUTPUT_LANGUAGE         = English
+
+# Input
+INPUT                   = README.md src
+INPUT_ENCODING          = UTF-8
+FILE_PATTERNS           = *.py *.md
+RECURSIVE               = YES
+EXCLUDE                 = src/build src/dist
+EXCLUDE_PATTERNS        = */__pycache__/*
+USE_MDFILE_AS_MAINPAGE  = README.md
+
+# Python
+OPTIMIZE_OUTPUT_JAVA    = YES
+PYTHON_DOCSTRING        = YES
+
+# Extraction
+EXTRACT_ALL             = YES
+EXTRACT_PRIVATE         = YES
+EXTRACT_STATIC          = YES
+HIDE_UNDOC_MEMBERS      = NO
+SORT_MEMBER_DOCS        = NO
+
+# Source browsing
+SOURCE_BROWSER          = YES
+INLINE_SOURCES          = NO
+REFERENCED_BY_RELATION  = YES
+REFERENCES_RELATION     = YES
+
+# Output
+GENERATE_HTML           = YES
+HTML_OUTPUT             = html
+GENERATE_TREEVIEW       = YES
+SEARCHENGINE            = YES
+GENERATE_LATEX          = NO
+
+# Diagrams (Graphviz is not installed, the built-in class diagrams are used)
+HAVE_DOT                = NO
+CLASS_GRAPH             = YES
+
+# Messages
+QUIET                   = YES
+WARNINGS                = YES
+WARN_IF_UNDOCUMENTED    = YES
+WARN_IF_DOC_ERROR       = YES
+WARN_LOGFILE            = docs/doxygen_warnings.txt
